@@ -7,7 +7,7 @@ const bot = new discord.Client({disableEveryone: true});
 // Variables
 
 // Bot Ready
-bot.on("ready", async () => {
+bot.on("ready", async => {
 	console.log(`Bot is ready! ${bot.user.username}`);
 });
 
