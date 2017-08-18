@@ -4,7 +4,7 @@ const discord = require("discord.js");
 const prefix = botSettings.prefix;
 
 // Variables
-var bot = new Discord.Client({disableEveryone: true});
+var bot = new discord.Client({disableEveryone: true});
 
 // Bot Ready
 bot.on("ready", function() {
