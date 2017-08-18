@@ -1,0 +1,22 @@
+{
+  "name": "circlesbot",
+  "version": "1.0.0",
+  "description": "Circles Bot is a multipurpose Discord Bot built for your enjoyment and ease.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Circles-Bot/CirclesBot.git"
+  },
+  "author": "ProjectChaosYT & Null",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Circles-Bot/CirclesBot/issues"
+  },
+  "homepage": "https://github.com/Circles-Bot/CirclesBot#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
