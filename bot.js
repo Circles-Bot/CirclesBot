@@ -1,14 +1,14 @@
 // Required
+const botSettings = require("./botsettings.json");
 const discord = require("discord.js");
-const token = "MzQ4MjE1NzEwMzQ4MjE0Mjc0.DHj1JA.2-7VYWyIDCXA7fM4rRaLEBKo8PI";
-const prefix = ".";
+const prefix = botSettings.prefix;
 
-var bot = new Discord.Client();
+const bot = new Discord.Client({disableEveryone: true});
 
 // Bot Ready
-bot.on("ready", function() {
-	console.log("Circles Bot is ready!");
+bot.on("ready", async () => {
+	console.log(`Bot is ready! ${bot.user.username}`);
 });
 
 // Bot Login
-bot.login(token);
+bot.login(botSettings.token);
