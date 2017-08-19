@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = (bot, message, args) => {
     let embed = new discord.RichEmbed()
         .setTitle("Circles Bot Commands")
-        .setThumbnail("http://i.imgur.com/T4yPGZA.png")
+        .setThumbnail("http://i.imgur.com/huzkdSi.png")
         .setColor("#4292f4")
         .addField(":information_source: Information", ".help - Sends the user a list of commands \n.info - Lists information ont he bot \n.userinfo - Lists the info of the user who initiated the command \n.ping - Checks the bots response time")
         .addField(":cop: Administration", ".kick [@user] - Kicks a user from the server \n.ban [@user] - Bans a user from the server \n.mute [@user] [time in seconds] - Mutes a user, disabling the ability to send messages \n.unmute [@user] - Manually unmutes a user")

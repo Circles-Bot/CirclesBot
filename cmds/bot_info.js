@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = (bot, message, args) => {
     let embed = new discord.RichEmbed()
         .setTitle("About Circles Bot")
-        .setThumbnail("http://i.imgur.com/T4yPGZA.png")
+        .setThumbnail("http://i.imgur.com/huzkdSi.png")
         .setDescription("Circles Bot is a multipurpose Discord Bot built for your enjoyment and ease. \n \n[Official Website](https://circlesdiscord.enjin.com/) \n[Official Server](https://discord.gg/aDAdUgG) \n[Invite Circles](https://discordapp.com/oauth2/authorize?client_id=348215710348214274&scope=bot&permissions=535850047) \n[Donate](https://www.patreon.com/circlesbot)")
         .setColor("#4292f4")
 

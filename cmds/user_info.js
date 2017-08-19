@@ -4,6 +4,7 @@ module.exports.run = (bot, message, args) => {
     let embed = new discord.RichEmbed()
         .setAuthor(message.author.username)
         .setDescription("This is the user's info!")
+        .setThumbnail(message.author.avatarURL)
         .setColor("#4292f4")
         .addField("Full Username", `${message.author.username}#${message.author.discriminator}`)
         .addField("ID", message.author.id)
