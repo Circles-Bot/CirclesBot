@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Circles-Bot/CirclesBot#readme",
   "dependencies": {
-    "discord.js": "^11.1.0"
+    "discord.js": "^11.1.0",
+    "ms": "^2.0.0"
   }
 }
