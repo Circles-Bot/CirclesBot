@@ -6,5 +6,5 @@ module.exports.run = (bot, message, args) => {
 
 // Name is the command name, .mute will initialize the command
 module.exports.help = {
-    name: "mute"
+    name: "ban"
 }
