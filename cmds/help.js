@@ -10,7 +10,7 @@ module.exports.run = (bot, message, args) => {
         .addField(":basketball: Fun", ".mball [Question] - Answers a question with Yes, No, or Maybe \n.hi - Replies with Hello! \n.rps [choice] - Play Rock, Paper, Scissors with the bot \n.meme - Posts a random meme to the channel")
         .addField(":musical_note: Music", ".play [song link] - Starts playing the song given \n.skip - Skips the current playing song \n.stop - Stop the bot from playing music")
 
-    message.channel.send("Help sent, You can also take a look at circlesdiscord.enjin.com")
+    message.channel.send("Help sent, You can also take a look at circlesbot.mistforums.com")
     message.member.send({embed: embed});
 };
 
