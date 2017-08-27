@@ -10,9 +10,9 @@ module.exports.run = (bot, message, args) => {
   let role = message.guild.roles.find(r => r.name == "Muted");
   if(!role) {
     try {
-      role = await message.guild.createRole({
+      role = message.guild.createRole({
         name: "Muted",
-        color: "#000000"
+        color: "#000000",
         permission: []
       });
 
