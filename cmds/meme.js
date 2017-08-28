@@ -15,6 +15,7 @@ var randomMemes = [
 	"Memes/meme11.jpg",
 	"Memes/meme12.jpg",
 	"Memes/meme13.jpg",
+	"Memes/meme14.jpg",
 ];
 
 module.exports.run = (bot, message, args) => {
