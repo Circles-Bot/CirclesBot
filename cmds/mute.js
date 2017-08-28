@@ -1,7 +1,32 @@
 const discord = require("discord.js");
 
 module.exports.run = (bot, message, args) => {
-    message.reply("This command has not yet been set up, please check back later!");
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("You do not have the `manage messages' permission.");
+
+  let toMute = message.mentions.users.first();
+  if (!toMute) return message.reply("You have not specified someone to mute.");
+  return message.reply(toMute.username + " has been muted.")
+
+  let role = message.guild.roles.find(r => r.name == "Muted");
+  if(!role) {
+    try {
+      role = message.guild.createRole({
+        name: "Muted",
+        color: "#000000",
+        permission: []
+      });
+
+      message.guild.channels.forEach(async (channel, id) => {
+        await channel.overwritePermissions(role, {
+          SEND_MESSAGES: false,
+          ADD_REACTIONS: false
+        });
+      });
+    } catch(e) {
+      console.log(e.stack);
+    }
+}
+  return;
 };
 
 // Name is the command name, .mute will initialize the command
