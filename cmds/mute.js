@@ -1,11 +1,13 @@
 const discord = require("discord.js");
+
 //This command is a penis, here's the code
 module.exports.run = (bot, message, args) => {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("You do not have the `manage messages' permission.");
 
   let toMute = message.mentions.users.first();
   if (!toMute) return message.reply("You have not specified someone to mute.");
-  return message.reply(toMute.username + " has been muted.")
+  return message.reply(toMute.username + " has been muted.");
+  toMute.addRole(Role)
 
   let role = message.guild.roles.find(r => r.name == "Muted");
   if(!role) {
@@ -26,7 +28,6 @@ module.exports.run = (bot, message, args) => {
       console.log(e.stack);
     }
 };
-  message.mentions.users.first().addRole("Muted")
   return;
 };
 
