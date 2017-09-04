@@ -1,5 +1,5 @@
 const discord = require("discord.js");
-
+//This command is a penis, here's the code
 module.exports.run = (bot, message, args) => {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("You do not have the `manage messages' permission.");
 
@@ -16,8 +16,8 @@ module.exports.run = (bot, message, args) => {
         permission: []
       });
 
-      message.guild.channels.forEach(async (channel, id) => {
-        await channel.overwritePermissions(role, {
+      message.guild.channels.forEach((channel, id) => {
+       channel.overwritePermissions(role, {
           SEND_MESSAGES: false,
           ADD_REACTIONS: false
         });
@@ -25,7 +25,8 @@ module.exports.run = (bot, message, args) => {
     } catch(e) {
       console.log(e.stack);
     }
-}
+};
+  message.mentions.users.first().addRole("Muted")
   return;
 };
 
