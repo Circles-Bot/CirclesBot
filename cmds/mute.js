@@ -7,7 +7,7 @@ module.exports.run = (bot, message, args) => {
   let toMute = message.mentions.users.first();
   if (!toMute) return message.reply("You have not specified someone to mute.");
   return message.reply(toMute.username + " has been muted.");
-  toMute.addRole(Role)
+  toMute.addRole("Muted")
 
   let role = message.guild.roles.find(r => r.name == "Muted");
   if(!role) {
@@ -24,9 +24,8 @@ module.exports.run = (bot, message, args) => {
           ADD_REACTIONS: false
         });
       });
-    } catch(e) {
-      console.log(e.stack);
-    }
+    } finally {toMute.addRole(role)
+      };
 };
   return;
 };
