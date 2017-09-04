@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 //This command is a penis, here's the code
 module.exports.run = (bot, message, args) => {
-  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("You do not have the `manage messages' permission.");
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have the `manage messages' permission.");
 
   let toMute = message.mentions.users.first();
   if (!toMute) return message.reply("You have not specified someone to mute.");
